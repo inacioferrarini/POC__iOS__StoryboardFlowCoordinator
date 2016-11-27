@@ -40,8 +40,9 @@ class UserPFDetailsViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func next() {
-        let data = self.getUserData()
-        self.delegate?.didInformedPFUserData(data)
+        let userDetailsData = self.getUserData()
+        self.userDetailsData = userDetailsData
+        self.delegate?.didInformedPFUserData(userDetailsData)
     }
     
 }

@@ -46,8 +46,9 @@ class UserAddressViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func next() {
-        let data = self.getAddressData()
-        self.delegate?.didInformedAddressData(data)
+        let userAddressData = self.getAddressData()
+        self.userAddressData = userAddressData
+        self.delegate?.didInformedAddressData(userAddressData)
     }
 
 }
