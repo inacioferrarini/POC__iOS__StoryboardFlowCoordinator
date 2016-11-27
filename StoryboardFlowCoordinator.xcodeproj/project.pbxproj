@@ -124,8 +124,8 @@
 		344744121DEB328F0053EF5F /* NewUserFlow */ = {
 			isa = PBXGroup;
 			children = (
-				344744241DEB388B0053EF5F /* NewUserFlowCoordinator.swift */,
 				344744131DEB32A10053EF5F /* NewUserFlow.storyboard */,
+				344744241DEB388B0053EF5F /* NewUserFlowCoordinator.swift */,
 				344744191DEB33490053EF5F /* ViewController */,
 			);
 			path = NewUserFlow;
@@ -144,8 +144,8 @@
 		3447442A1DEB6FFA0053EF5F /* NewUserPFFlow */ = {
 			isa = PBXGroup;
 			children = (
-				344744301DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift */,
 				3447442C1DEB70220053EF5F /* NewUserPFFlow.storyboard */,
+				344744301DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift */,
 			);
 			path = NewUserPFFlow;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 		3447442B1DEB6FFA0053EF5F /* NewUserPJFlow */ = {
 			isa = PBXGroup;
 			children = (
-				344744321DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift */,
 				3447442E1DEB70320053EF5F /* NewUserPJFlow.storyboard */,
+				344744321DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift */,
 			);
 			path = NewUserPJFlow;
 			sourceTree = "<group>";
