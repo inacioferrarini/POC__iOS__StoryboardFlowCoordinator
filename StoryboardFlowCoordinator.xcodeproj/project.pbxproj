@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3441A7061DEB7435003D1F63 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */; };
+		3441A7071DEB7435003D1F63 /* UserTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */; };
+		3441A7081DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeSelectionViewController.xib; sourceTree = "<group>"; };
+		3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3441A7021DEB7435003D1F63 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */,
+				3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */,
+				3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		344743D81DEB13910053EF5F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +107,7 @@
 				344744121DEB328F0053EF5F /* NewUserFlow */,
 				3447442A1DEB6FFA0053EF5F /* NewUserPFFlow */,
 				3447442B1DEB6FFA0053EF5F /* NewUserPJFlow */,
+				3441A7021DEB7435003D1F63 /* ViewControllers */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -209,6 +226,7 @@
 				344744141DEB32A10053EF5F /* NewUserFlow.storyboard in Resources */,
 				3447441D1DEB33490053EF5F /* UserTypeSelectionViewController.xib in Resources */,
 				3447442D1DEB70220053EF5F /* NewUserPFFlow.storyboard in Resources */,
+				3441A7071DEB7435003D1F63 /* UserTypeSelectionViewController.xib in Resources */,
 				344743EA1DEB13910053EF5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +243,9 @@
 				3447441F1DEB343B0053EF5F /* UserTypeSelectionViewController.swift in Sources */,
 				344744251DEB388B0053EF5F /* NewUserFlowCoordinator.swift in Sources */,
 				344744331DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift in Sources */,
+				3441A7081DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
+				3441A7061DEB7435003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
 				344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +410,7 @@
 				344743F51DEB13910053EF5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
