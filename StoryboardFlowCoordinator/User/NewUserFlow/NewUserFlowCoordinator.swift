@@ -30,9 +30,11 @@ extension NewUserFlowCoordinator: UserTypeSelectionViewControllerDelegate {
 
     func didSelectNewUserType(_ type: UserKind) {
         if type == .pessoaFisica {
-            print ("Funfou pessoa fisica")
+            let subFlow = NewUserPFFlowCoordinator(using: self.navigationController)
+            subFlow.start()
         } else if type == .pessoaJuridica {
-            print ("Funfou pessoa juridica")
+            let subFlow = NewUserPJFlowCoordinator(using: self.navigationController)
+            subFlow.start()
         }
     }
 

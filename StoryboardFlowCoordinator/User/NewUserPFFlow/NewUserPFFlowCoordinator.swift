@@ -19,6 +19,7 @@ class NewUserPFFlowCoordinator {
     }
     
     func start() {
+        print ("starting PF Flow")
 //        guard let viewController = self.storyboard.instantiateInitialViewController() as? UserTypeSelectionViewController else { return }
 //        viewController.delegate = self
 //        self.navigationController.pushViewController(viewController, animated: true)

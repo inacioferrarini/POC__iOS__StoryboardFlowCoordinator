@@ -17,6 +17,13 @@ class NewUserPJFlowCoordinator: NSObject {
         self.navigationController = navigationController
         self.storyboard = UIStoryboard(name: "NewUserPJFlow", bundle: nil)
     }
-    
+
+    func start() {
+        print ("starting PJ Flow")
+        //        guard let viewController = self.storyboard.instantiateInitialViewController() as? UserTypeSelectionViewController else { return }
+        //        viewController.delegate = self
+        //        self.navigationController.pushViewController(viewController, animated: true)
+        //        print ("done")
+    }
 
 }
