@@ -16,6 +16,10 @@
 		3441A7381DEB7CA1003D1F63 /* UserTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7301DEB7CA1003D1F63 /* UserTypeSelectionViewController.xib */; };
 		3441A7391DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7311DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */; };
 		3441A73C1DEB7D29003D1F63 /* UserPFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A73B1DEB7D29003D1F63 /* UserPFData.swift */; };
+		3441A73E1DEB8476003D1F63 /* UserAddressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A73D1DEB8476003D1F63 /* UserAddressData.swift */; };
+		3441A7411DEB852B003D1F63 /* UserAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A73F1DEB852B003D1F63 /* UserAddressViewController.swift */; };
+		3441A7421DEB852B003D1F63 /* UserAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7401DEB852B003D1F63 /* UserAddressViewController.xib */; };
+		3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -38,6 +42,10 @@
 		3441A7301DEB7CA1003D1F63 /* UserTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeSelectionViewController.xib; sourceTree = "<group>"; };
 		3441A7311DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		3441A73B1DEB7D29003D1F63 /* UserPFData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPFData.swift; sourceTree = "<group>"; };
+		3441A73D1DEB8476003D1F63 /* UserAddressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressData.swift; sourceTree = "<group>"; };
+		3441A73F1DEB852B003D1F63 /* UserAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressViewController.swift; sourceTree = "<group>"; };
+		3441A7401DEB852B003D1F63 /* UserAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAddressViewController.xib; sourceTree = "<group>"; };
+		3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +96,9 @@
 		3441A7271DEB7CA1003D1F63 /* UserAddress */ = {
 			isa = PBXGroup;
 			children = (
+				3441A73F1DEB852B003D1F63 /* UserAddressViewController.swift */,
+				3441A7401DEB852B003D1F63 /* UserAddressViewController.xib */,
+				3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */,
 			);
 			path = UserAddress;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3441A73B1DEB7D29003D1F63 /* UserPFData.swift */,
+				3441A73D1DEB8476003D1F63 /* UserAddressData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +278,7 @@
 				344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */,
 				3441A7351DEB7CA1003D1F63 /* UserPFDetailsViewController.xib in Resources */,
 				3441A7331DEB7CA1003D1F63 /* UserMenuViewController.xib in Resources */,
+				3441A7421DEB852B003D1F63 /* UserAddressViewController.xib in Resources */,
 				3447442F1DEB70320053EF5F /* NewUserPJFlow.storyboard in Resources */,
 				344744141DEB32A10053EF5F /* NewUserFlow.storyboard in Resources */,
 				3447442D1DEB70220053EF5F /* NewUserPFFlow.storyboard in Resources */,
@@ -282,13 +295,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3441A7341DEB7CA1003D1F63 /* UserPFDetailsViewController.swift in Sources */,
+				3441A73E1DEB8476003D1F63 /* UserAddressData.swift in Sources */,
 				344744251DEB388B0053EF5F /* NewUserFlowCoordinator.swift in Sources */,
 				3441A73C1DEB7D29003D1F63 /* UserPFData.swift in Sources */,
 				3441A7361DEB7CA1003D1F63 /* UserPFDetailsViewControllerDelegate.swift in Sources */,
 				344744331DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift in Sources */,
+				3441A7411DEB852B003D1F63 /* UserAddressViewController.swift in Sources */,
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
 				3441A7391DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
 				344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */,
+				3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */,
 				3441A7371DEB7CA1003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
 				3441A7321DEB7CA1003D1F63 /* UserMenuViewController.swift in Sources */,
 			);

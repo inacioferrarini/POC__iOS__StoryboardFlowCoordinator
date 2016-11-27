@@ -11,10 +11,22 @@
         <!--UserPF Details View Controller-->
         <scene sceneID="Ids-MF-oPM">
             <objects>
-                <viewController id="lde-g9-Bv2" customClass="UserPFDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="lde-g9-Bv2" customClass="UserPFDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fDx-E2-pPZ" kind="show" identifier="UserAddressViewController" id="LWx-8V-lgN"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMQ-ax-6pX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-378" y="137"/>
+        </scene>
+        <!--User Address View Controller-->
+        <scene sceneID="TUf-ph-LqG">
+            <objects>
+                <viewController id="fDx-E2-pPZ" customClass="UserAddressViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxy-aI-OzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="136"/>
         </scene>
     </scenes>
 </document>
