@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3441A7061DEB7435003D1F63 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */; };
-		3441A7071DEB7435003D1F63 /* UserTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */; };
-		3441A7081DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */; };
+		3441A70E1DEB7559003D1F63 /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A70B1DEB7559003D1F63 /* UserTypeSelectionViewController.swift */; };
+		3441A70F1DEB7559003D1F63 /* UserTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A70C1DEB7559003D1F63 /* UserTypeSelectionViewController.xib */; };
+		3441A7101DEB7559003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A70D1DEB7559003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -17,9 +17,6 @@
 		3447440B1DEB1CEC0053EF5F /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344744091DEB1CEC0053EF5F /* UserMenuViewController.swift */; };
 		3447440C1DEB1CEC0053EF5F /* UserMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3447440A1DEB1CEC0053EF5F /* UserMenuViewController.xib */; };
 		344744141DEB32A10053EF5F /* NewUserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344744131DEB32A10053EF5F /* NewUserFlow.storyboard */; };
-		3447441D1DEB33490053EF5F /* UserTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3447441B1DEB33490053EF5F /* UserTypeSelectionViewController.xib */; };
-		3447441F1DEB343B0053EF5F /* UserTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447441E1DEB343B0053EF5F /* UserTypeSelectionViewController.swift */; };
-		344744211DEB356A0053EF5F /* UserTypeSelectionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344744201DEB356A0053EF5F /* UserTypeSelectionViewControllerDelegate.swift */; };
 		344744251DEB388B0053EF5F /* NewUserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344744241DEB388B0053EF5F /* NewUserFlowCoordinator.swift */; };
 		3447442D1DEB70220053EF5F /* NewUserPFFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3447442C1DEB70220053EF5F /* NewUserPFFlow.storyboard */; };
 		3447442F1DEB70320053EF5F /* NewUserPJFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3447442E1DEB70320053EF5F /* NewUserPJFlow.storyboard */; };
@@ -28,9 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
-		3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeSelectionViewController.xib; sourceTree = "<group>"; };
-		3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3441A70B1DEB7559003D1F63 /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		3441A70C1DEB7559003D1F63 /* UserTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeSelectionViewController.xib; sourceTree = "<group>"; };
+		3441A70D1DEB7559003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,9 +37,6 @@
 		344744091DEB1CEC0053EF5F /* UserMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		3447440A1DEB1CEC0053EF5F /* UserMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserMenuViewController.xib; sourceTree = "<group>"; };
 		344744131DEB32A10053EF5F /* NewUserFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewUserFlow.storyboard; sourceTree = "<group>"; };
-		3447441B1DEB33490053EF5F /* UserTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTypeSelectionViewController.xib; sourceTree = "<group>"; };
-		3447441E1DEB343B0053EF5F /* UserTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewController.swift; sourceTree = "<group>"; };
-		344744201DEB356A0053EF5F /* UserTypeSelectionViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344744241DEB388B0053EF5F /* NewUserFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserFlowCoordinator.swift; sourceTree = "<group>"; };
 		3447442C1DEB70220053EF5F /* NewUserPFFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewUserPFFlow.storyboard; sourceTree = "<group>"; };
 		3447442E1DEB70320053EF5F /* NewUserPJFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewUserPJFlow.storyboard; sourceTree = "<group>"; };
@@ -61,14 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3441A7021DEB7435003D1F63 /* ViewControllers */ = {
+		3441A7091DEB7559003D1F63 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3441A7031DEB7435003D1F63 /* UserTypeSelectionViewController.swift */,
-				3441A7041DEB7435003D1F63 /* UserTypeSelectionViewController.xib */,
-				3441A7051DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */,
+				3441A70A1DEB7559003D1F63 /* UserTypeSelection */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3441A70A1DEB7559003D1F63 /* UserTypeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				3441A70B1DEB7559003D1F63 /* UserTypeSelectionViewController.swift */,
+				3441A70C1DEB7559003D1F63 /* UserTypeSelectionViewController.xib */,
+				3441A70D1DEB7559003D1F63 /* UserTypeSelectionViewControllerDelegate.swift */,
+			);
+			path = UserTypeSelection;
 			sourceTree = "<group>";
 		};
 		344743D81DEB13910053EF5F = {
@@ -107,7 +109,7 @@
 				344744121DEB328F0053EF5F /* NewUserFlow */,
 				3447442A1DEB6FFA0053EF5F /* NewUserPFFlow */,
 				3447442B1DEB6FFA0053EF5F /* NewUserPJFlow */,
-				3441A7021DEB7435003D1F63 /* ViewControllers */,
+				3441A7091DEB7559003D1F63 /* ViewControllers */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -126,19 +128,8 @@
 			children = (
 				344744131DEB32A10053EF5F /* NewUserFlow.storyboard */,
 				344744241DEB388B0053EF5F /* NewUserFlowCoordinator.swift */,
-				344744191DEB33490053EF5F /* ViewController */,
 			);
 			path = NewUserFlow;
-			sourceTree = "<group>";
-		};
-		344744191DEB33490053EF5F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3447441E1DEB343B0053EF5F /* UserTypeSelectionViewController.swift */,
-				3447441B1DEB33490053EF5F /* UserTypeSelectionViewController.xib */,
-				344744201DEB356A0053EF5F /* UserTypeSelectionViewControllerDelegate.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		3447442A1DEB6FFA0053EF5F /* NewUserPFFlow */ = {
@@ -221,12 +212,11 @@
 			files = (
 				344743EF1DEB13910053EF5F /* LaunchScreen.storyboard in Resources */,
 				344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */,
+				3441A70F1DEB7559003D1F63 /* UserTypeSelectionViewController.xib in Resources */,
 				3447442F1DEB70320053EF5F /* NewUserPJFlow.storyboard in Resources */,
 				3447440C1DEB1CEC0053EF5F /* UserMenuViewController.xib in Resources */,
 				344744141DEB32A10053EF5F /* NewUserFlow.storyboard in Resources */,
-				3447441D1DEB33490053EF5F /* UserTypeSelectionViewController.xib in Resources */,
 				3447442D1DEB70220053EF5F /* NewUserPFFlow.storyboard in Resources */,
-				3441A7071DEB7435003D1F63 /* UserTypeSelectionViewController.xib in Resources */,
 				344743EA1DEB13910053EF5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,13 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3447440B1DEB1CEC0053EF5F /* UserMenuViewController.swift in Sources */,
-				344744211DEB356A0053EF5F /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
-				3447441F1DEB343B0053EF5F /* UserTypeSelectionViewController.swift in Sources */,
 				344744251DEB388B0053EF5F /* NewUserFlowCoordinator.swift in Sources */,
 				344744331DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift in Sources */,
-				3441A7081DEB7435003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
+				3441A7101DEB7559003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
-				3441A7061DEB7435003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
+				3441A70E1DEB7559003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
 				344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
