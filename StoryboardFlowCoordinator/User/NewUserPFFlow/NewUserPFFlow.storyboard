@@ -11,7 +11,7 @@
         <!--UserPF Details View Controller-->
         <scene sceneID="Ids-MF-oPM">
             <objects>
-                <viewController storyboardIdentifier="UserPFDetailsViewController" id="lde-g9-Bv2" customClass="UserPFDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="lde-g9-Bv2" customClass="UserPFDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMQ-ax-6pX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-378" y="137"/>

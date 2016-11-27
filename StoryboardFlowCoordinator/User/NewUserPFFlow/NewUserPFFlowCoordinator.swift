@@ -29,6 +29,8 @@ class NewUserPFFlowCoordinator {
             guard let viewController = self.storyboard.instantiateInitialViewController() as? UserPFDetailsViewController else { return }
             viewController.delegate = self
             self.navigationController.pushViewController(viewController, animated: true)
+        } else {
+            print ("UHU")
         }
     }
     
