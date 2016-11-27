@@ -13,17 +13,32 @@ class NewUserPFFlowCoordinator {
     let navigationController: UINavigationController
     let storyboard: UIStoryboard
     
+    var userData: UserPFData?
+    
     init(using navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.storyboard = UIStoryboard(name: "NewUserPFFlow", bundle: nil)
     }
     
     func start() {
-        print ("starting PF Flow")
-//        guard let viewController = self.storyboard.instantiateInitialViewController() as? UserTypeSelectionViewController else { return }
-//        viewController.delegate = self
-//        self.navigationController.pushViewController(viewController, animated: true)
-//        print ("done")
+        next()
     }
 
+    func next() {
+        if self.userData == nil {
+            guard let viewController = self.storyboard.instantiateInitialViewController() as? UserPFDetailsViewController else { return }
+            viewController.delegate = self
+            self.navigationController.pushViewController(viewController, animated: true)
+        }
+    }
+    
+}
+
+extension NewUserPFFlowCoordinator: UserPFDetailsViewControllerDelegate {
+    
+    func didInformedPFUserData(_ userData: UserPFData) {
+        self.userData = userData
+        self.next()
+    }
+    
 }

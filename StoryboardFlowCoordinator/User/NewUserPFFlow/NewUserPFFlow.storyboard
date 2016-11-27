@@ -8,37 +8,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--UserPF Details View Controller-->
         <scene sceneID="Ids-MF-oPM">
             <objects>
-                <viewController id="lde-g9-Bv2" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="RNi-SZ-Msh" kind="show" id="M3T-KL-g4s"/>
-                    </connections>
-                </viewController>
+                <viewController storyboardIdentifier="UserPFDetailsViewController" id="lde-g9-Bv2" customClass="UserPFDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMQ-ax-6pX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="136"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="umn-zo-Na1">
-            <objects>
-                <viewController id="RNi-SZ-Msh" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="OTT-kN-EOu" kind="show" id="Z4z-5r-uKF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Q6-rW-hXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="449" y="135"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pRu-ty-Lk5">
-            <objects>
-                <viewController id="OTT-kN-EOu" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bqH-3R-Ujl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1327" y="134"/>
+            <point key="canvasLocation" x="-378" y="137"/>
         </scene>
     </scenes>
 </document>
