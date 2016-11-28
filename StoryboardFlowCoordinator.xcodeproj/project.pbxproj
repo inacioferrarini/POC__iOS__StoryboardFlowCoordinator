@@ -23,6 +23,10 @@
 		3441A7471DEBAB7D003D1F63 /* UserConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */; };
 		3441A7481DEBAB7D003D1F63 /* UserConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */; };
 		3441A74A1DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7491DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift */; };
+		3441A74D1DEBBBAF003D1F63 /* UserPJDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A74B1DEBBBAF003D1F63 /* UserPJDetailsViewController.swift */; };
+		3441A74E1DEBBBAF003D1F63 /* UserPJDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A74C1DEBBBAF003D1F63 /* UserPJDetailsViewController.xib */; };
+		3441A7501DEBBBC4003D1F63 /* UserPJData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A74F1DEBBBC4003D1F63 /* UserPJData.swift */; };
+		3441A7521DEBBBE6003D1F63 /* UserPJDetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7511DEBBBE6003D1F63 /* UserPJDetailsViewControllerDelegate.swift */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -52,6 +56,10 @@
 		3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfirmationViewController.swift; sourceTree = "<group>"; };
 		3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserConfirmationViewController.xib; sourceTree = "<group>"; };
 		3441A7491DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfirmationViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3441A74B1DEBBBAF003D1F63 /* UserPJDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPJDetailsViewController.swift; sourceTree = "<group>"; };
+		3441A74C1DEBBBAF003D1F63 /* UserPJDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPJDetailsViewController.xib; sourceTree = "<group>"; };
+		3441A74F1DEBBBC4003D1F63 /* UserPJData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPJData.swift; sourceTree = "<group>"; };
+		3441A7511DEBBBE6003D1F63 /* UserPJDetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPJDetailsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +140,9 @@
 		3441A72D1DEB7CA1003D1F63 /* UserPJDetails */ = {
 			isa = PBXGroup;
 			children = (
+				3441A74B1DEBBBAF003D1F63 /* UserPJDetailsViewController.swift */,
+				3441A74C1DEBBBAF003D1F63 /* UserPJDetailsViewController.xib */,
+				3441A7511DEBBBE6003D1F63 /* UserPJDetailsViewControllerDelegate.swift */,
 			);
 			path = UserPJDetails;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 			children = (
 				3441A73B1DEB7D29003D1F63 /* UserPFData.swift */,
 				3441A73D1DEB8476003D1F63 /* UserAddressData.swift */,
+				3441A74F1DEBBBC4003D1F63 /* UserPJData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +297,7 @@
 			files = (
 				344743EF1DEB13910053EF5F /* LaunchScreen.storyboard in Resources */,
 				344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */,
+				3441A74E1DEBBBAF003D1F63 /* UserPJDetailsViewController.xib in Resources */,
 				3441A7351DEB7CA1003D1F63 /* UserPFDetailsViewController.xib in Resources */,
 				3441A7331DEB7CA1003D1F63 /* UserMenuViewController.xib in Resources */,
 				3441A7421DEB852B003D1F63 /* UserAddressViewController.xib in Resources */,
@@ -311,6 +324,7 @@
 				3441A7361DEB7CA1003D1F63 /* UserPFDetailsViewControllerDelegate.swift in Sources */,
 				344744331DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift in Sources */,
 				3441A7471DEBAB7D003D1F63 /* UserConfirmationViewController.swift in Sources */,
+				3441A7521DEBBBE6003D1F63 /* UserPJDetailsViewControllerDelegate.swift in Sources */,
 				3441A7411DEB852B003D1F63 /* UserAddressViewController.swift in Sources */,
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
 				3441A7391DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
@@ -318,6 +332,8 @@
 				3441A74A1DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift in Sources */,
 				3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */,
 				3441A7371DEB7CA1003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
+				3441A74D1DEBBBAF003D1F63 /* UserPJDetailsViewController.swift in Sources */,
+				3441A7501DEBBBC4003D1F63 /* UserPJData.swift in Sources */,
 				3441A7321DEB7CA1003D1F63 /* UserMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
