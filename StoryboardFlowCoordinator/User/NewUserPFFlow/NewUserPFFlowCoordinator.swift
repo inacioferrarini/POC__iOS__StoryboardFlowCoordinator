@@ -16,6 +16,8 @@ class NewUserPFFlowCoordinator {
     var userData: UserPFData?
     var addressData: UserAddressData?
     
+    var flowCompletionBlock: ((UserPFData?, UserAddressData?) -> Void)?
+    
     init(using navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.storyboard = UIStoryboard(name: "NewUserPFFlow", bundle: nil)
@@ -25,6 +27,11 @@ class NewUserPFFlowCoordinator {
         next()
     }
 
+    func end() {
+        self.navigationController.viewControllers.removeLast(3)
+        self.flowCompletionBlock?(self.userData, self.addressData)
+    }
+    
     func next() {
         let currentViewController = self.navigationController.visibleViewController
         
@@ -65,8 +72,7 @@ extension NewUserPFFlowCoordinator {
         viewController.delegate = self
         inject(target: viewController)
     }
-    
-    
+
 }
 
 extension NewUserPFFlowCoordinator {
@@ -102,7 +108,7 @@ extension NewUserPFFlowCoordinator: UserAddressViewControllerDelegate {
 extension NewUserPFFlowCoordinator: UserConfirmationViewControllerDelegate {
     
     func didClosedConfirmation() {
-        print ("closing ... :)")
+        self.end()
     }
     
 }

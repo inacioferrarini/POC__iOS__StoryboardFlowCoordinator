@@ -24,6 +24,10 @@ class NewUserFlowCoordinator {
         self.navigationController.pushViewController(viewController, animated: true)
     }
 
+    func end() {
+        // Criar delegate com os dados informados no flow.
+    }
+    
 }
 
 extension NewUserFlowCoordinator: UserTypeSelectionViewControllerDelegate {
@@ -31,6 +35,9 @@ extension NewUserFlowCoordinator: UserTypeSelectionViewControllerDelegate {
     func didSelectNewUserType(_ type: UserKind) {
         if type == .pessoaFisica {
             let subFlow = NewUserPFFlowCoordinator(using: self.navigationController)
+            subFlow.flowCompletionBlock = { (userData: UserPFData?, addressData: UserAddressData?) in
+                self.navigationController.viewControllers.removeLast()
+            }
             subFlow.start()
         } else if type == .pessoaJuridica {
             let subFlow = NewUserPJFlowCoordinator(using: self.navigationController)
