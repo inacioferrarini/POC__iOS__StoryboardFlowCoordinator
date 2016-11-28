@@ -35,7 +35,7 @@ class NewUserPJFlowCoordinator: NSObject {
     func next() {
         let currentViewController = self.navigationController.visibleViewController
         
-        if currentViewController is UserPFDetailsViewController {
+        if currentViewController is UserPJDetailsViewController {
             self.pushAddressViewController()
         } else if currentViewController is UserAddressViewController {
             self.pushConfirmationViewController()
@@ -56,7 +56,7 @@ extension NewUserPJFlowCoordinator {
     }
     
     func pushAddressViewController() {
-        guard let currentViewController = self.navigationController.visibleViewController as? UserPFDetailsViewController else { return }
+        guard let currentViewController = self.navigationController.visibleViewController as? UserPJDetailsViewController else { return }
         currentViewController.performSegue(withIdentifier: "UserAddressViewController", sender: nil)
         
         guard let viewController = self.navigationController.visibleViewController as? UserAddressViewController else { return }
