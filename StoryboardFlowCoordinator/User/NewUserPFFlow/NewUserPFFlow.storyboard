@@ -23,10 +23,22 @@
         <!--User Address View Controller-->
         <scene sceneID="TUf-ph-LqG">
             <objects>
-                <viewController id="fDx-E2-pPZ" customClass="UserAddressViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="fDx-E2-pPZ" customClass="UserAddressViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="kHh-0A-ydb" kind="show" identifier="UserConfirmationViewController" id="Jlg-h6-HBh"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxy-aI-OzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="590" y="136"/>
+        </scene>
+        <!--User Confirmation View Controller-->
+        <scene sceneID="BF6-5X-dBm">
+            <objects>
+                <viewController id="kHh-0A-ydb" customClass="UserConfirmationViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRg-SH-qjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="136"/>
         </scene>
     </scenes>
 </document>

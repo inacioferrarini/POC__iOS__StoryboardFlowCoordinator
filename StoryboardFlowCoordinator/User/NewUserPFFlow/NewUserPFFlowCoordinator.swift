@@ -16,26 +16,24 @@ class NewUserPFFlowCoordinator {
     var userData: UserPFData?
     var addressData: UserAddressData?
     
-    var currentViewController: UIViewController?
-    
     init(using navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.storyboard = UIStoryboard(name: "NewUserPFFlow", bundle: nil)
     }
     
     func start() {
-        self.currentViewController = nil
         next()
     }
 
     func next() {
-
-        if self.currentViewController == nil {
-            self.pushUserDataViewController()
-        } else if self.currentViewController is UserPFDetailsViewController {
+        let currentViewController = self.navigationController.visibleViewController
+        
+        if currentViewController is UserPFDetailsViewController {
             self.pushAddressViewController()
+        } else if currentViewController is UserAddressViewController {
+            self.pushConfirmationViewController()
         } else {
-            print ("UHU")
+            self.pushUserDataViewController()
         }
     }
     
@@ -44,21 +42,41 @@ class NewUserPFFlowCoordinator {
 extension NewUserPFFlowCoordinator {
     
     func pushUserDataViewController() {
-        self.currentViewController = self.storyboard.instantiateInitialViewController()
-        guard let viewController = self.currentViewController as? UserPFDetailsViewController else { return }
+        guard let viewController = self.storyboard.instantiateInitialViewController() as? UserPFDetailsViewController else { return }
         self.navigationController.pushViewController(viewController, animated: true)
         viewController.delegate = self
-        viewController.userDetailsData = self.userData
+        inject(target: viewController)
     }
     
     func pushAddressViewController() {
-        guard let previousViewController = self.currentViewController else { return }
-        previousViewController.performSegue(withIdentifier: "UserAddressViewController", sender: nil)
-        self.currentViewController = self.navigationController.viewControllers.last
+        guard let currentViewController = self.navigationController.visibleViewController as? UserPFDetailsViewController else { return }
+        currentViewController.performSegue(withIdentifier: "UserAddressViewController", sender: nil)
         
-        guard let viewController = self.currentViewController as? UserAddressViewController else { return }
+        guard let viewController = self.navigationController.visibleViewController as? UserAddressViewController else { return }
         viewController.delegate = self
+        inject(target: viewController)
+    }
+
+    func pushConfirmationViewController() {
+        guard let currentViewController = self.navigationController.visibleViewController as? UserAddressViewController else { return }
+        currentViewController.performSegue(withIdentifier: "UserConfirmationViewController", sender: nil)
         
+        guard let viewController = self.navigationController.visibleViewController as? UserConfirmationViewController else { return }
+        viewController.delegate = self
+        inject(target: viewController)
+    }
+    
+    
+}
+
+extension NewUserPFFlowCoordinator {
+ 
+    func inject(target: UIViewController) {
+        if let target = target as? UserPFDetailsViewController {
+            target.userDetailsData = self.userData
+        } else if let target = target as? UserAddressViewController {
+            target.userAddressData = self.addressData
+        }
     }
     
 }
@@ -81,3 +99,10 @@ extension NewUserPFFlowCoordinator: UserAddressViewControllerDelegate {
     
 }
 
+extension NewUserPFFlowCoordinator: UserConfirmationViewControllerDelegate {
+    
+    func didClosedConfirmation() {
+        print ("closing ... :)")
+    }
+    
+}

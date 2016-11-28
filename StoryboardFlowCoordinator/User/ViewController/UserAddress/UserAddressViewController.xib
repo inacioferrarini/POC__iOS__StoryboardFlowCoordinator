@@ -69,6 +69,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-JE-Bau">
                     <rect key="frame" x="16" y="426" width="343" height="30"/>
                     <state key="normal" title="Avançar"/>
+                    <connections>
+                        <action selector="next" destination="-1" eventType="touchUpInside" id="MlB-Yk-InZ"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RCD-HK-Afl">
                     <rect key="frame" x="16" y="319" width="343" height="19"/>
