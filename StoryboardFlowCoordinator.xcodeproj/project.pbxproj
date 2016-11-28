@@ -20,6 +20,8 @@
 		3441A7411DEB852B003D1F63 /* UserAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A73F1DEB852B003D1F63 /* UserAddressViewController.swift */; };
 		3441A7421DEB852B003D1F63 /* UserAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7401DEB852B003D1F63 /* UserAddressViewController.xib */; };
 		3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */; };
+		3441A7471DEBAB7D003D1F63 /* UserConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */; };
+		3441A7481DEBAB7D003D1F63 /* UserConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		3441A73F1DEB852B003D1F63 /* UserAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressViewController.swift; sourceTree = "<group>"; };
 		3441A7401DEB852B003D1F63 /* UserAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAddressViewController.xib; sourceTree = "<group>"; };
 		3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfirmationViewController.swift; sourceTree = "<group>"; };
+		3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserConfirmationViewController.xib; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		3441A7281DEB7CA1003D1F63 /* UserConfirmation */ = {
 			isa = PBXGroup;
 			children = (
+				3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */,
+				3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */,
 			);
 			path = UserConfirmation;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				344744141DEB32A10053EF5F /* NewUserFlow.storyboard in Resources */,
 				3447442D1DEB70220053EF5F /* NewUserPFFlow.storyboard in Resources */,
 				3441A7381DEB7CA1003D1F63 /* UserTypeSelectionViewController.xib in Resources */,
+				3441A7481DEBAB7D003D1F63 /* UserConfirmationViewController.xib in Resources */,
 				344743EA1DEB13910053EF5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +307,7 @@
 				3441A73C1DEB7D29003D1F63 /* UserPFData.swift in Sources */,
 				3441A7361DEB7CA1003D1F63 /* UserPFDetailsViewControllerDelegate.swift in Sources */,
 				344744331DEB70D10053EF5F /* NewUserPJFlowCoordinator.swift in Sources */,
+				3441A7471DEBAB7D003D1F63 /* UserConfirmationViewController.swift in Sources */,
 				3441A7411DEB852B003D1F63 /* UserAddressViewController.swift in Sources */,
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
 				3441A7391DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
