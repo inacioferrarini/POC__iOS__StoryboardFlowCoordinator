@@ -41,6 +41,9 @@ extension NewUserFlowCoordinator: UserTypeSelectionViewControllerDelegate {
             subFlow.start()
         } else if type == .pessoaJuridica {
             let subFlow = NewUserPJFlowCoordinator(using: self.navigationController)
+            subFlow.flowCompletionBlock = { (userData: UserPJData?, addressData: UserAddressData?) in
+                self.navigationController.viewControllers.removeLast()
+            }
             subFlow.start()
         }
     }

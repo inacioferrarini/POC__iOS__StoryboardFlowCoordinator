@@ -1,7 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1cS-5x-UM7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--UserPJ Details View Controller-->
+        <scene sceneID="GOf-Zy-3PD">
+            <objects>
+                <viewController id="1cS-5x-UM7" customClass="UserPJDetailsViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Hzf-jY-Ibl" kind="show" identifier="UserAddressViewController" id="dWw-Xg-fyp">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYB-uG-K7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="137"/>
+        </scene>
+        <!--User Address View Controller-->
+        <scene sceneID="4tX-dD-l7x">
+            <objects>
+                <viewController id="Hzf-jY-Ibl" customClass="UserAddressViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="g3E-et-2k6" kind="show" identifier="UserConfirmationViewController" id="HF8-A1-ji0">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncw-7T-3L1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="136"/>
+        </scene>
+        <!--User Confirmation View Controller-->
+        <scene sceneID="ZRi-RF-10Y">
+            <objects>
+                <viewController id="g3E-et-2k6" customClass="UserConfirmationViewController" customModule="StoryboardFlowCoordinator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWL-FB-h1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="136"/>
+        </scene>
+    </scenes>
 </document>

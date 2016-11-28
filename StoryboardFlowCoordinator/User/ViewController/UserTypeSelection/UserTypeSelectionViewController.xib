@@ -19,15 +19,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrA-nG-GWd">
+                    <rect key="frame" x="92" y="64" width="191" height="34"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-yv-9Fr">
-                    <rect key="frame" x="141" y="64" width="93" height="30"/>
+                    <rect key="frame" x="16" y="130" width="343" height="30"/>
                     <state key="normal" title="Pessoa Física"/>
                     <connections>
                         <action selector="newPFUser" destination="-1" eventType="touchUpInside" id="yHD-6o-7Z3"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l3-5b-CQO">
-                    <rect key="frame" x="133.5" y="126" width="108" height="30"/>
+                    <rect key="frame" x="16" y="192" width="343" height="30"/>
                     <state key="normal" title="Pessoa Juridica"/>
                     <connections>
                         <action selector="newPJUser" destination="-1" eventType="touchUpInside" id="JS1-Zz-3MO"/>
@@ -36,10 +42,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2l3-5b-CQO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2o8-HQ-q7a"/>
-                <constraint firstItem="pJE-yv-9Fr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="GJH-f1-Hex"/>
+                <constraint firstAttribute="trailing" secondItem="2l3-5b-CQO" secondAttribute="trailing" constant="16" id="02J-Nx-6el"/>
+                <constraint firstItem="pJE-yv-9Fr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="99N-HI-9aF"/>
+                <constraint firstItem="2l3-5b-CQO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LRM-2q-gE7"/>
+                <constraint firstItem="DrA-nG-GWd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Q8d-Lp-Lf2"/>
                 <constraint firstItem="2l3-5b-CQO" firstAttribute="top" secondItem="pJE-yv-9Fr" secondAttribute="bottom" constant="32" id="Rv3-NH-KqK"/>
-                <constraint firstItem="pJE-yv-9Fr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zGa-ss-XAi"/>
+                <constraint firstItem="pJE-yv-9Fr" firstAttribute="top" secondItem="DrA-nG-GWd" secondAttribute="bottom" constant="32" id="V5S-25-lXR"/>
+                <constraint firstAttribute="trailing" secondItem="pJE-yv-9Fr" secondAttribute="trailing" constant="16" id="tcn-k2-k56"/>
+                <constraint firstItem="DrA-nG-GWd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tiD-HO-zgy"/>
             </constraints>
         </view>
     </objects>
