@@ -22,6 +22,7 @@
 		3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */; };
 		3441A7471DEBAB7D003D1F63 /* UserConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */; };
 		3441A7481DEBAB7D003D1F63 /* UserConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */; };
+		3441A74A1DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441A7491DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift */; };
 		344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344743E41DEB13910053EF5F /* AppDelegate.swift */; };
 		344743EA1DEB13910053EF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344743E81DEB13910053EF5F /* Main.storyboard */; };
 		344743EC1DEB13910053EF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344743EB1DEB13910053EF5F /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		3441A7431DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddressViewControllerDelegate.swift; sourceTree = "<group>"; };
 		3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfirmationViewController.swift; sourceTree = "<group>"; };
 		3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserConfirmationViewController.xib; sourceTree = "<group>"; };
+		3441A7491DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfirmationViewControllerDelegate.swift; sourceTree = "<group>"; };
 		344743E11DEB13910053EF5F /* StoryboardFlowCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardFlowCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344743E41DEB13910053EF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344743E91DEB13910053EF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				3441A7451DEBAB7D003D1F63 /* UserConfirmationViewController.swift */,
 				3441A7461DEBAB7D003D1F63 /* UserConfirmationViewController.xib */,
+				3441A7491DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift */,
 			);
 			path = UserConfirmation;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				344744311DEB70A90053EF5F /* NewUserPFFlowCoordinator.swift in Sources */,
 				3441A7391DEB7CA1003D1F63 /* UserTypeSelectionViewControllerDelegate.swift in Sources */,
 				344743E51DEB13910053EF5F /* AppDelegate.swift in Sources */,
+				3441A74A1DEBAC0A003D1F63 /* UserConfirmationViewControllerDelegate.swift in Sources */,
 				3441A7441DEB8543003D1F63 /* UserAddressViewControllerDelegate.swift in Sources */,
 				3441A7371DEB7CA1003D1F63 /* UserTypeSelectionViewController.swift in Sources */,
 				3441A7321DEB7CA1003D1F63 /* UserMenuViewController.swift in Sources */,

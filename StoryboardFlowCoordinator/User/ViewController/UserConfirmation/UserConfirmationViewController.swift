@@ -9,6 +9,14 @@
 import UIKit
 
 class UserConfirmationViewController: UIViewController {
+    
+    var delegate: UserConfirmationViewControllerDelegate?
+    
 
-
+    
+    
+    @IBAction func dismiss() {
+     self.delegate?.didClosedConfirmation()
+    }
+    
 }
