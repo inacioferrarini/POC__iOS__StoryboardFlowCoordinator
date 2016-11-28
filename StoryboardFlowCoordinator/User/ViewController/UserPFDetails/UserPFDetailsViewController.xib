@@ -43,7 +43,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2jh-Mq-eI4">
-                    <rect key="frame" x="16" y="145" width="343" height="19"/>
+                    <rect key="frame" x="16" y="145" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="r08-uE-Syb"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
@@ -52,13 +56,17 @@
                     </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qND-Yh-jEQ">
-                    <rect key="frame" x="16" y="180" width="343" height="15.5"/>
+                    <rect key="frame" x="16" y="191" width="343" height="15.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-If-byc">
-                    <rect key="frame" x="16" y="196" width="343" height="19"/>
+                    <rect key="frame" x="16" y="207" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CXR-4N-4dU"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
@@ -67,13 +75,17 @@
                     </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmL-fH-lzy">
-                    <rect key="frame" x="16" y="231" width="343" height="15.5"/>
+                    <rect key="frame" x="16" y="253" width="343" height="15.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-48-WE0">
-                    <rect key="frame" x="16" y="246.5" width="343" height="19"/>
+                    <rect key="frame" x="16" y="268.5" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="RYH-e7-1p7"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
@@ -82,7 +94,7 @@
                     </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-vV-ZBK">
-                    <rect key="frame" x="16" y="297.5" width="343" height="30"/>
+                    <rect key="frame" x="16" y="330.5" width="343" height="30"/>
                     <state key="normal" title="Avançar"/>
                     <connections>
                         <action selector="next" destination="-1" eventType="touchUpInside" id="A6r-jn-yTd"/>
