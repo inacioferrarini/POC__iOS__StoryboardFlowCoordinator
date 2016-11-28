@@ -52,3 +52,25 @@ class UserAddressViewController: UIViewController {
     }
 
 }
+
+extension UserAddressViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == self.address {
+            self.number.becomeFirstResponder()
+        } else if textField == self.number {
+            self.neighborhood.becomeFirstResponder()
+        } else if textField == self.neighborhood {
+            self.city.becomeFirstResponder()
+        } else if textField == self.city {
+            self.estate.becomeFirstResponder()
+        } else if textField == self.estate {
+            self.next()
+        }
+        
+        return true
+    }
+    
+}
+

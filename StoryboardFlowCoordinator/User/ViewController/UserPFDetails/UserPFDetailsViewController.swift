@@ -46,3 +46,21 @@ class UserPFDetailsViewController: UIViewController {
     }
     
 }
+
+extension UserPFDetailsViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.name {
+            self.cpf.becomeFirstResponder()
+        } else if textField == self.cpf {
+            self.email.becomeFirstResponder()
+        } else {
+            next()
+        }
+        return true
+    }
+    
+}
+
+
+
